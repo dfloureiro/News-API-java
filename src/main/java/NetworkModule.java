@@ -1,4 +1,4 @@
-import com.sun.istack.internal.NotNull;
+import io.reactivex.annotations.NonNull;
 import okhttp3.*;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
@@ -23,7 +23,7 @@ class NetworkModule {
 
     private static String API_KEY;
 
-    NetworkModule(@NotNull String apiKey) {
+    NetworkModule(@NonNull String apiKey) {
         API_KEY = apiKey;
         this.cacheMaxSize = DEFAULT_CACHE_MAX_SIZE;
         this.cacheMaxAgeSeconds = DEFAULT_CACHE_MAX_AGE;

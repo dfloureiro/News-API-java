@@ -1,5 +1,3 @@
-import com.sun.istack.internal.NotNull;
-import com.sun.istack.internal.Nullable;
 import datamodels.ArticlesResponse;
 import datamodels.SourcesResponse;
 import enums.Categories;
@@ -7,6 +5,8 @@ import enums.Countries;
 import enums.Languages;
 import enums.SortBy;
 import io.reactivex.Flowable;
+import io.reactivex.annotations.NonNull;
+import io.reactivex.annotations.Nullable;
 
 /**
  * News Api Request Factory, and API wrapper for https://newsapi.org
@@ -22,7 +22,7 @@ public class NewsApiRequestFactory {
      *
      * @param apiKey your news api key
      */
-    public NewsApiRequestFactory(@NotNull String apiKey) {
+    public NewsApiRequestFactory(@NonNull String apiKey) {
         networkModule = new NetworkModule(apiKey);
     }
 
@@ -35,7 +35,7 @@ public class NewsApiRequestFactory {
      * @param readTimeoutSeconds  max read timeout in seconds
      * @param writeTimeoutSeconds max write timeout in seconds
      */
-    public NewsApiRequestFactory(@NotNull String apiKey, int cacheMaxSize, int cacheMaxAgeSeconds, int readTimeoutSeconds, int writeTimeoutSeconds) {
+    public NewsApiRequestFactory(@NonNull String apiKey, int cacheMaxSize, int cacheMaxAgeSeconds, int readTimeoutSeconds, int writeTimeoutSeconds) {
         networkModule = new NetworkModule(apiKey, cacheMaxSize, cacheMaxAgeSeconds, readTimeoutSeconds, writeTimeoutSeconds);
     }
 
