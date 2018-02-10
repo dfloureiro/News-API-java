@@ -33,3 +33,16 @@ Step 2. Add the dependency
 	    <artifactId>News-API-java</artifactId>
 	    <version>v1.1</version>
 	</dependency>
+
+
+Usage example:
+
+       	new NewsApiRequestFactory("myApiKey")
+                .getTopHeadlinesRequest(Categories.general, Countries.pt,null,20,0)
+                .subscribeOn(Schedulers.io())
+        	.map(ArticlesResponse::getArticles)
+                .subscribe(articles -> {
+                    for(Article article : articles)
+                            System.out.print(article.getTitle()+"\n");
+                        }
+                ,throwable -> System.out.print(throwable.getMessage()));
