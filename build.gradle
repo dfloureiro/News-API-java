@@ -1,37 +1,10 @@
 group 'com.dfl.newsapijava'
 version '1.0-SNAPSHOT'
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
-    }
-}
-apply plugin: 'com.jfrog.bintray'
 apply plugin: 'java'
+apply plugin: 'maven'
 
-
-bintray {
-    user = System.getenv('bintray.user')
-    key = System.getenv('bintray.apikey')
-    configurations = ['archives']
-    pkg {
-        repo = 'maven'
-        name = 'com.dfl.newsapijava'
-        userOrg = 'bintray_user'
-        licenses = ['MIT']
-        vcsUrl = 'https://github.com/dfloureiro/News-API-java.git'
-        version {
-            name = '1.0-SNAPSHOT'
-            desc = 'News API-API-Java 1.0 final'
-            released = new Date()
-            vcsTag = '1.0'
-        }
-    }
-}
-
+group = 'com.github.dfloureiro'
 
 sourceCompatibility = 1.8
 
