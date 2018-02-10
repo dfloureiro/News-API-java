@@ -10,8 +10,8 @@ public interface NewsApi {
 
     @GET("/v2/everything")
     Flowable<ArticlesResponse> getEverything(@Query("q") String q, @Query("sources") String sources, @Query("domains") String domains, @Query("from") String from,
-                                             @Query("to")String to, @Query("language") String language, @Query("sortBy") String sortBy,
-                                             @Query("pageSize")int pageSize, @Query("page") int page);
+                                             @Query("to") String to, @Query("language") String language, @Query("sortBy") String sortBy,
+                                             @Query("pageSize") int pageSize, @Query("page") int page);
 
     @GET("/v2/top-headlines")
     Flowable<ArticlesResponse> getTopHeadlines(@Query("category") String category, @Query("country") String country,
