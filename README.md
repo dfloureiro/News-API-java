@@ -13,7 +13,7 @@ Step 1: Add it in your root build.gradle at the end of repositories:
 Step 2: Add the dependency
 
 	dependencies {
-	        compile 'com.github.dfloureiro:News-API-java:v1.1'
+	        compile 'com.github.dfloureiro:News-API-java:v1.2'
 	}
 
 Maven:
@@ -31,7 +31,7 @@ Step 2. Add the dependency
 	<dependency>
 	    <groupId>com.github.dfloureiro</groupId>
 	    <artifactId>News-API-java</artifactId>
-	    <version>v1.1</version>
+	    <version>v1.2</version>
 	</dependency>
 
 
