@@ -37,7 +37,7 @@ Add the dependency:
 
 
 ### How to use examples:
-Create a instance of NewsApiRequestFactory with default values:
+Create an instance of NewsApiRequestFactory with default values:
 
         NewsApiRequestFactory newsApiRequestFactory = new NewsApiRequestFactory("apiKey");
 
