@@ -69,7 +69,7 @@ Get top headlines by sources/query:
 
 Search articles from the full repo with everything:
 
-            newsApiRequestFactory.getEverythingRequest("trump","bbc-news",null,"2018-01-01", "2018-02-11", Languages.en, SortBy.popularity,20,0)
+            newsApiRequestFactory.getEverythingRequest("trump","bbc-news",null,"2018-01-01", "2018-02-11", Languages.en, SortBy.popularity,20,1)
                     .subscribeOn(Schedulers.io())
                     .map(ArticlesResponse::getArticles)
                     .subscribe(articles -> {
