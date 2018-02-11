@@ -90,7 +90,7 @@ Get available sources:
                             , throwable -> System.out.print(throwable.getMessage()));
 			
 
-### Used techologies:
+### Used technologies:
 #### RETROFIT 2
 https://github.com/square/retrofit/tree/master/retrofit-adapters/rxjava2
 #### GSON
