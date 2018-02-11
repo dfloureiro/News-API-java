@@ -9,7 +9,7 @@ import io.reactivex.annotations.NonNull;
 import io.reactivex.annotations.Nullable;
 
 /**
- * News Api Request Factory, and API wrapper for https://newsapi.org
+ * News Api Request Factory, an API wrapper for https://newsapi.org
  *
  * @author Diogo Loureiro
  */

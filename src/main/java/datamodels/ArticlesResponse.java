@@ -5,11 +5,20 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
+/**
+ * Response for toHeadlines and Everything requests
+ */
 public class ArticlesResponse {
 
     @SerializedName("status")
     @Expose
     private String status;
+    @SerializedName("code")
+    @Expose
+    private String code;
+    @SerializedName("message")
+    @Expose
+    private String message;
     @SerializedName("totalResults")
     @Expose
     private Integer totalResults;
@@ -23,6 +32,22 @@ public class ArticlesResponse {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     public Integer getTotalResults() {

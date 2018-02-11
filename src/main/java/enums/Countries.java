@@ -1,5 +1,8 @@
 package enums;
 
+/**
+ * Available countries to filter
+ */
 public enum Countries {
     ae, ar, at, au, be, bg, br, ca, ch, cn, co, cu, cz, de, eg, fr, gb, gr, hk,
     hu, id, ie, il, in, it, jp, kr, lt, lv, ma, mx, my, ng, nl, no, nz, ph, pl,

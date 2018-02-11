@@ -5,11 +5,20 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
+/**
+ * Response for Sources Request
+ */
 public class SourcesResponse {
 
     @SerializedName("status")
     @Expose
     private String status;
+    @SerializedName("code")
+    @Expose
+    private String code;
+    @SerializedName("message")
+    @Expose
+    private String message;
     @SerializedName("sources")
     @Expose
     private List<Source> sources = null;
@@ -20,6 +29,22 @@ public class SourcesResponse {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     public List<Source> getSources() {
