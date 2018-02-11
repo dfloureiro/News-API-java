@@ -12,7 +12,7 @@ Add it in your root build.gradle at the end of repositories:
 		}
 	}
   
-Add the dependency
+Add the dependency:
 
 	dependencies {
 	        compile 'com.github.dfloureiro:News-API-java:v1.2'
@@ -27,7 +27,7 @@ Add the dependency
 		</repository>
 	</repositories>
   
-Add the dependency
+Add the dependency:
 
 	<dependency>
 	    <groupId>com.github.dfloureiro</groupId>
